@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mushafir Global creates innovative AI-powered software solutions for businesses worldwide.">
+    <meta property="og:title" content="Mushafir Global – Software Development">
+    <meta property="og:description" content="Custom software, AI, cloud, and mobile solutions for global clients.">
+    <meta property="og:image" content="images/preview.webp">
+    <meta property="og:type" content="website">
+
     <title>Mushafir Global</title>
     <!-- Tailwind CSS CDN for modern, responsive styling -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -27,6 +33,10 @@
             width: 24px; height: 3px; background-color: #334155;
             transition: all 0.3s ease-in-out;
         }
+        #mobile-menu {
+            transition: max-height 0.3s ease;
+        }
+
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen">
@@ -36,7 +46,7 @@
     <!-- Left: Logo + Brand -->
     <div class="flex items-center space-x-3">
         <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-500 shadow-lg">
-             <img src="images/Mushafir.png" alt="Mushafir Logo" class="w-full h-full object-cover">
+             <img src="images/Mushafir.png" alt="Mushafir Logo" loading="lazy" class="w-full h-full object-cover">
         </div>
         <h1 class="text-2xl md:text-3xl font-extrabold text-blue-800 hover:text-blue-600 transition-colors duration-200">
             Mushafir Global
@@ -56,7 +66,7 @@
             </ul>
         </nav>
 
-        <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button id="mobile-menu-button" aria-label="Open Navigation Menu" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
             <div class="space-y-1.5">
                 <span class="hamburger-line block"></span>
                 <span class="hamburger-line block"></span>
@@ -66,16 +76,20 @@
     </div>
 </header>
 
-
+<!-- Overlay (click to close) -->
+<div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
 <!-- Mobile Menu -->
-<div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg rounded-b-xl px-4 py-6 transition-all duration-300 ease-in-out">
-    <ul class="flex flex-col space-y-4 text-gray-700 font-semibold text-center">
-        <li><a href="#home" class="block py-2 hover:bg-gray-100 rounded-lg">Home</a></li>
-        <li><a href="#journey" class="block py-2 hover:bg-gray-100 rounded-lg">Journey</a></li>
-        <li><a href="#about" class="block py-2 hover:bg-gray-100 rounded-lg">About</a></li>
-        <li><a href="#products" class="block py-2 hover:bg-gray-100 rounded-lg">Products</a></li>
-        <li><a href="#career" class="block py-2 hover:bg-gray-100 rounded-lg">Career</a></li>
-        <li><a href="#contact" class="block py-2 hover:bg-gray-100 rounded-lg">Contact</a></li>
+<!-- Side Slider -->
+<div id="mobile-menu"
+     class="fixed top-0 right-0 h-full w-64 bg-gradient-to-br from-blue-400 via-indigo-500 to-purple-600 shadow-xl z-50
+            transform translate-x-full transition-transform duration-300">
+    <ul class="flex flex-col space-y-6 text-gray-700 font-semibold p-6">
+        <li><a href="#home" class="block hover:text-blue-600 menu-link">Home</a></li>
+        <li><a href="#journey" class="block hover:text-blue-600 menu-link">Journey</a></li>
+        <li><a href="#about" class="block hover:text-blue-600 menu-link">About</a></li>
+        <li><a href="#products" class="block hover:text-blue-600 menu-link">Products</a></li>
+        <li><a href="#career" class="block hover:text-blue-600 menu-link">Career</a></li>
+        <li><a href="#contact" class="block hover:text-blue-600 menu-link">Contact</a></li>
     </ul>
 </div>
 
@@ -86,7 +100,7 @@
     <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-between bg-gradient-custom rounded-2xl p-8 shadow-xl">
         <!-- Left side: Text -->
         <div class="md:w-7/12 text-center md:text-left mb-8 md:mb-0">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-4 animate-pulse text-gray-800">
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4 animate-pulse text-gray-800">
                 Explore. Dream. Build.
             </h2>
             <p class="text-lg md:text-2xl max-w-3xl mx-auto md:mx-0 font-light leading-relaxed text-gray-700">
@@ -110,7 +124,7 @@
         <!-- Right side: Animated AI image -->
         <div class="md:w-5/12 flex justify-end">
             <div class="relative w-72 h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl animated-circle">
-                <img src="images/Mushafir Global.png" alt="An abstract AI-generated image representing innovation and technology" class="w-full h-full object-cover">
+                <img src="images/Mushafir Global.png" alt="An abstract AI-generated image representing innovation and technology" loading="lazy" class="w-full h-full object-cover">
             </div>
         </div>
     </section>
@@ -222,10 +236,10 @@
             <!-- Middle Column: Images -->
             <div class="flex flex-col space-y-6 items-center justify-center">
                 <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl animated-circle hover:scale-105 transform transition duration-500">
-                    <img src="images/About Image 1.jpg" alt="Vision Image 1" class="w-full h-full object-cover">
+                    <img src="images/About Image 1.jpg" alt="Vision Image 1" loading="lazy" class="w-full h-full object-cover">
                 </div>
                 <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl animated-circle hover:scale-105 transform transition duration-500">
-                    <img src="images/About Image 2.jpg" alt="Vision Image 2" class="w-full h-full object-cover">
+                    <img src="images/About Image 2.jpg" alt="Vision Image 2" loading="lazy" class="w-full h-full object-cover">
                 </div>
             </div>
 
@@ -277,7 +291,7 @@
             <!-- Left Side: Circular App Image -->
             <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
                 <div class="relative w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl animated-circle">
-                <img src="images/Login Page.png" alt="Mushafir App" class="w-full h-full object-cover">
+                <img src="images/Login Page.png" alt="Mushafir App" loading="lazy" class="w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center rounded-full">
                     <span class="text-white text-3xl md:text-4xl font-bold animate-pulse">Upcoming Soon</span>
                 </div>
@@ -514,15 +528,29 @@
 
 
 
-<!-- Mobile Menu Script -->
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('mobile-menu-button');
-    const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-});
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const menu    = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('overlay');
+    const links   = document.querySelectorAll('.menu-link');
+
+    function openMenu(){
+        menu.classList.remove('translate-x-full');
+        menu.classList.add('translate-x-0'); // Correctly positions for the slide-in
+        overlay.classList.remove('hidden');
+    }
+    
+    function closeMenu(){
+        menu.classList.remove('translate-x-0');
+        menu.classList.add('translate-x-full'); // Slides the menu out
+        overlay.classList.add('hidden');
+    }
+    
+    // Event listeners
+    menuBtn.addEventListener('click', openMenu);
+    overlay.addEventListener('click', closeMenu);
+    links.forEach(link => link.addEventListener('click', closeMenu));
 </script>
 
 </body>
 </html>
-
