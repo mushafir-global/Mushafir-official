@@ -15,10 +15,10 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-            <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-d1tQHcU+P+s0qY3ypE3QJ9Jx5+VZ5x6KmS/Jv4g+0RZd8N2jQbX+6xS3Gq5BHZ0u0h0aXsh+5i5U8v0G1Bd3yQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+            <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" xintegrity="sha512-d1tQHcU+P+s0qY3ypE3QJ9Jx5+VZ5x6KmS/Jv4g+0RZd8N2jQbX+6xS3Gq5BHZ0u0h0aXsh+5i5U8v0G1Bd3yQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
             <!-- Font Awesome CDN -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-d1tQHcU+P+s0qY3ypE3QJ9Jx5+VZ5x6KmS/Jv4g+0RZd8N2jQbX+6xS3Gq5BHZ0u0h0aXsh+5i5U8v0G1Bd3yQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" xintegrity="sha512-d1tQHcU+P+s0Y3ypE3QJ9Jx5+VZ5x6KmS/Jv4g+0RZd8N2jQbX+6xS3Gq5BHZ0u0h0aXsh+5i5U8v0G1Bd3yQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
             <style>
                 body { font-family: 'Inter', sans-serif; }
@@ -44,57 +44,51 @@
                 
             </style>
         </head>
-        <body class="bg-gray-100 min-h-screen">
+        <body class="bg-gradient-to-br from-gray-900 to-[#101923] text-white">
 
-        <header class="sticky top-0 z-50 shadow-sm rounded-b-xl py-4 px-6 md:px-12 flex items-center justify-between 
-                    bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 backdrop-blur-md">
+        <header class="sticky top-0 z-50 shadow-sm rounded-b-xl py-4 px-6 md:px-12 flex items-center justify-between bg-[#202E3B] backdrop-blur-md">
             <!-- Left: Logo + Brand -->
             <div class="flex items-center space-x-3">
-                <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-blue-500 shadow-lg">
-                    <img src="images/Mushafir Logo (1).png" alt="Mushafir Logo" loading="lazy" class="w-full h-full object-cover">
+                <div class="w-32 h-20 overflow-hidden ">
+                    <img src="images/Transparent Mushafir Logo2 (1).png" alt="Mushafir Logo" loading="lazy" class="w-full h-full object-cover">
                 </div>
-                <h1 class="text-2xl md:text-3xl font-extrabold text-blue-800 hover:text-blue-600 transition-colors duration-200">
+                <!-- <h1 class="text-2xl md:text-3xl font-extrabold text-blue-800 hover:text-blue-600 transition-colors duration-200">
                     Mushafir Global
-                </h1>
+                </h1> -->
             </div>
 
-            <!-- Right: Navigation + Mobile Button -->
-            <div class="flex items-center space-x-6">
+           <div class="flex items-center space-x-6">
                 <nav id="main-nav" class="hidden md:flex">
-                    <ul class="flex space-x-6 text-gray-700 font-semibold">
-                        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-                        <li><a href="#journey" class="hover:text-blue-600">Journey</a></li>
-                        <li><a href="#about" class="hover:text-blue-600">About</a></li>
-                        <li><a href="#products" class="hover:text-blue-600">Products</a></li>
-                        <li><a href="#career" class="hover:text-blue-600">Career</a></li>
-                        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+                    <ul class="flex space-x-6 text-white font-semibold">
+                        <li><a href="#home" class="transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-sm">Home</a></li>
+                        <li><a href="#journey" class="transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-sm">Journey</a></li>
+                        <li><a href="#about" class="transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-sm">About</a></li>
+                        <li><a href="#products" class="transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-sm">Products</a></li>
+                        <li><a href="#career" class="transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-sm">Career</a></li>
+                        <li><a href="#contact" class="transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-sm">Contact</a></li>
                     </ul>
                 </nav>
-
-                <button id="mobile-menu-button" aria-label="Open Navigation Menu" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button id="mobile-menu-button" aria-label="Open Navigation Menu" class="md:hidden p-2 rounded-lg text-white hover:text-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     <div class="space-y-1.5">
-                        <span class="hamburger-line block"></span>
-                        <span class="hamburger-line block"></span>
-                        <span class="hamburger-line block"></span>
+                        <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
+                        <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
+                        <span class="hamburger-line block w-6 h-0.5 bg-white"></span>
                     </div>
                 </button>
             </div>
         </header>
 
-        <!-- Overlay (click to close) -->
-        <div id="overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
-        <!-- Mobile Menu -->
-        <!-- Side Slider -->
+        <div id="overlay" class="hidden fixed inset-0 bg-black/75 z-40"></div>
         <div id="mobile-menu"
-            class="fixed top-0 right-0 h-full w-64 bg-gradient-to-br from-blue-400 via-indigo-500 to-purple-600 shadow-xl z-50
+            class="fixed top-0 right-0 h-full w-64 bg-[#202E3B] shadow-xl z-50
                     transform translate-x-full transition-transform duration-300">
-            <ul class="flex flex-col space-y-6 text-gray-700 font-semibold p-6">
-                <li><a href="#home" class="block hover:text-blue-600 menu-link">Home</a></li>
-                <li><a href="#journey" class="block hover:text-blue-600 menu-link">Journey</a></li>
-                <li><a href="#about" class="block hover:text-blue-600 menu-link">About</a></li>
-                <li><a href="#products" class="block hover:text-blue-600 menu-link">Products</a></li>
-                <li><a href="#career" class="block hover:text-blue-600 menu-link">Career</a></li>
-                <li><a href="#contact" class="block hover:text-blue-600 menu-link">Contact</a></li>
+            <ul class="flex flex-col space-y-6 font-semibold p-6 text-white">
+                <li><a href="#home" class="block menu-link transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-md">Home</a></li>
+                <li><a href="#journey" class="block menu-link transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-md">Journey</a></li>
+                <li><a href="#about" class="block menu-link transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-md">About</a></li>
+                <li><a href="#products" class="block menu-link transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-md">Products</a></li>
+                <li><a href="#career" class="block menu-link transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-md">Career</a></li>
+                <li><a href="#contact" class="block menu-link transition-all duration-300 hover:text-cyan-300 hover:shadow-cyan-400/50 hover:shadow-md">Contact</a></li>
             </ul>
         </div>
 
@@ -102,207 +96,184 @@
         <main class="container mx-auto px-4 md:px-8 py-12">
 
             <!-- Home Section (Two-column layout) -->
-            <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-between bg-gradient-custom rounded-2xl p-8 shadow-xl">
-                <!-- Left side: Text -->
+             <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-between bg-[#192734] rounded-2xl p-8 shadow-xl text-white">
                 <div class="md:w-7/12 text-center md:text-left mb-8 md:mb-0">
-                    <h2 class="text-3xl md:text-5xl font-extrabold mb-4 animate-pulse text-gray-800">
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-4 animate-pulse text-white">
                         Explore. Dream. Build.
                     </h2>
-                    <p class="text-lg md:text-2xl max-w-3xl mx-auto md:mx-0 font-light leading-relaxed text-gray-700">
-                        Mushafir Global builds innovative software solutions that empower businesses and individuals to achieve more. 
-                        Explore cutting-edge applications, seamless experiences, and tools designed for a smarter, digital world.  
-                        <span class="text-blue-600 font-semibold">Innovation is our journey, technology is our destination!</span>
+                    <p class="text-lg md:text-2xl max-w-3xl mx-auto md:mx-0 font-light leading-relaxed text-gray-300">
+                        Mushafir Global builds innovative software solutions that empower businesses and individuals to achieve more.
+                        Explore cutting-edge applications, seamless experiences, and tools designed for a smarter, digital world.
+                        <span class="text-cyan-400 font-semibold">Innovation is our journey, technology is our destination!</span>
                     </p>
 
-                    <!-- ✅ REPLACED BUTTON -->
                     <a href="#contact"
-                    class="group relative inline-flex items-center justify-center mt-6 px-8 py-4
-                            text-lg font-semibold text-white bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500
-                            rounded-full shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl
-                            focus:outline-none focus:ring-4 focus:ring-purple-300">
+                        class="group relative inline-flex items-center justify-center mt-8 px-8 py-4
+                            text-lg font-semibold text-white bg-cyan-500
+                            rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-400/50
+                            focus:outline-none focus:ring-4 focus:ring-cyan-300">
                         Get in Touch
                         <span class="absolute inset-0 rounded-full bg-white/10 blur-md opacity-0 group-hover:opacity-100 transition"></span>
                     </a>
 
                 </div>
 
-                <!-- Right side: Animated AI image -->
                 <div class="md:w-5/12 flex justify-end">
                     <div class="relative w-72 h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl animate-float-pulse">
                         <img src="images/Home page image.png" alt="AI innovation" loading="lazy" class="w-full h-full object-cover z-10 relative">
-                        <div class="absolute inset-0 rounded-full border-4 border-blue-400 animate-spin-slow"></div>
+                        <div class="absolute inset-0 rounded-full border-4 border-cyan-400 animate-spin-slow"></div>
                     </div>
                 </div>
+            </section>
 
-                <style>
-                    /* Combine the animations for a single, powerful class */
-                    .animate-float-pulse {
-                        animation: float-up-down 5s ease-in-out infinite, pulse-glow 3s ease-in-out infinite;
-                    }
+            <style>
+                /* Combine the animations for a single, powerful class */
+                .animate-float-pulse {
+                    animation: float-up-down 5s ease-in-out infinite, pulse-glow 3s ease-in-out infinite;
+                }
 
-                    @keyframes float-up-down {
-                        0%, 100% {
-                            transform: translateY(0);
-                        }
-                        50% {
-                            transform: translateY(-20px);
-                        }
+                @keyframes float-up-down {
+                    0%, 100% {
+                        transform: translateY(0);
                     }
+                    50% {
+                        transform: translateY(-20px);
+                    }
+                }
 
-                    @keyframes pulse-glow {
-                        0%, 100% {
-                            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); /* blue-500 glow */
-                        }
-                        50% {
-                            box-shadow: 0 0 40px rgba(30, 64, 175, 0.8); /* a stronger blue-700 glow */
-                        }
+                @keyframes pulse-glow {
+                    0%, 100% {
+                        box-shadow: 0 0 20px rgba(52, 211, 245, 0.5); /* cyan-400 glow */
                     }
+                    50% {
+                        box-shadow: 0 0 40px rgba(52, 211, 245, 0.8); /* a stronger cyan-400 glow */
+                    }
+                }
 
-                    @keyframes spin-slow {
-                        from {
-                            transform: rotate(0deg);
-                        }
-                        to {
-                            transform: rotate(360deg);
-                        }
+                @keyframes spin-slow {
+                    from {
+                        transform: rotate(0deg);
                     }
-                    .animate-spin-slow {
-                        animation: spin-slow 10s linear infinite;
+                    to {
+                        transform: rotate(360deg);
                     }
-                </style>
-                            </section>
+                }
+                .animate-spin-slow {
+                    animation: spin-slow 10s linear infinite;
+                }
+            </style>
 
-            <!-- Journey Section as Vertical Card Layout with Read More -->
-            <section id="journey" class="bg-white rounded-2xl shadow-xl p-8 md:p-16 mt-12">
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center">The Mushafir Journey</h3>
+            <section id="journey" class="bg-[#192734] rounded-2xl shadow-xl p-8 md:p-16 mt-12 text-white">
+                <h3 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-10 text-center">The Mushafir Journey</h3>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                    <!-- Card 1: How It Started -->
-                    <div class="bg-blue-50 rounded-2xl shadow-lg p-6">
-                        <h4 class="text-xl font-semibold text-blue-700 mb-2">How It Started</h4>
-                        <p class="text-gray-700 text-sm mb-2">
-                            Mushafir began as a software vision to create innovative solutions that solve real-world problems.
-                        </p>
-                        <button class="text-blue-600 font-semibold hover:underline text-sm read-more-btn">Read More</button>
-                        <p class="text-gray-700 text-sm mt-2 hidden read-more-content">
-                            Initially, it was just an idea, brainstorming with a small team, exploring possibilities in AI and software tools. The goal was to create practical, scalable solutions that could impact global users.
-                        </p>
-                    </div>
-
-                    <!-- Card 2: Initial Product Experiments -->
-                    <div class="bg-blue-50 rounded-2xl shadow-lg p-6">
-                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Initial Experiments</h4>
-                        <p class="text-gray-700 text-sm mb-2">
-                            Started building prototypes, AI-powered solutions, and tested software ideas for the market.
-                        </p>
-                        <button class="text-blue-600 font-semibold hover:underline text-sm read-more-btn">Read More</button>
-                        <p class="text-gray-700 text-sm mt-2 hidden read-more-content">
-                            Early experiments involved small software modules, AI integrations, and testing user interactions. Feedback helped refine ideas before full-scale development.
+                    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">How It All Started</h4>
+                        <p class="text-gray-300 text-sm mb-2">
+                            Mushafir Global began as a small, ambitious idea among a group of friends who shared a passion for technology. We saw an opportunity to build software that not only solved problems but also created seamless and intuitive user experiences.
+                            <span class="hidden more-text">
+                            Our initial brainstorming sessions were focused on a single question: "How can we make technology genuinely useful for everyone?" From there, the vision for a company dedicated to user-centric and innovative software began to take shape, fueled by late-night coding sessions and a shared belief in our collective skills.
+                            </span>
+                            <span class="read-more-link text-cyan-300 cursor-pointer font-semibold hover:underline ml-1">...Read More</span>
                         </p>
                     </div>
 
-                    <!-- Card 3: Current Status -->
-                    <div class="bg-blue-50 rounded-2xl shadow-lg p-6">
-                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Current Status</h4>
-                        <p class="text-gray-700 text-sm mb-2">
-                            Mushafir Global is now a software-based organization delivering innovative products with a growing global presence.
-                        </p>
-                        <button class="text-blue-600 font-semibold hover:underline text-sm read-more-btn">Read More</button>
-                        <p class="text-gray-700 text-sm mt-2 hidden read-more-content">
-                            Our products include user-centric apps and AI-driven tools. We collaborate with businesses and innovators worldwide, expanding our reach and refining software solutions.
+                    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">Initial Product Experiments</h4>
+                        <p class="text-gray-300 text-sm mb-2">
+                            Our first step was to build a foundational product, a small internal tool that proved our concept. We used this as our laboratory, experimenting with new technologies and iterating rapidly based on feedback.
+                            <span class="hidden more-text">
+                            These early experiments were crucial. They allowed us to hone our development process, master new tech stacks, and, most importantly, learn how to build for real users. The success of this initial prototype gave us the confidence to scale up and develop our first major application.
+                            </span>
+                            <span class="read-more-link text-cyan-300 cursor-pointer font-semibold hover:underline ml-1">...Read More</span>
                         </p>
                     </div>
 
-                    <!-- Card 4: Future Vision -->
-                    <div class="bg-blue-50 rounded-2xl shadow-lg p-6">
-                        <h4 class="text-xl font-semibold text-blue-700 mb-2">Future Vision</h4>
-                        <p class="text-gray-700 text-sm mb-2">
-                            Expanding our software ecosystem, creating AI-driven solutions, and connecting businesses worldwide.
+                    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">Current Milestones</h4>
+                        <p class="text-gray-300 text-sm mb-2">
+                            Today, Mushafir Global is a full-fledged software and AI solutions company with a growing portfolio of products. We are actively working with businesses worldwide, from small startups to large enterprises.
+                            <span class="hidden more-text">
+                            Our focus has evolved to include AI integration, cloud-based services, and mobile solutions, allowing us to serve a diverse range of clients. We pride ourselves on being a trusted partner for digital transformation, helping companies navigate the complexities of the modern tech landscape.
+                            </span>
+                            <span class="read-more-link text-cyan-300 cursor-pointer font-semibold hover:underline ml-1">...Read More</span>
                         </p>
-                        <button class="text-blue-600 font-semibold hover:underline text-sm read-more-btn">Read More</button>
-                        <p class="text-gray-700 text-sm mt-2 hidden read-more-content">
-                            Mushafir aims to continuously innovate, adding new AI features, scaling products globally, and helping organizations transform their software processes with smart, practical solutions.
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl shadow-lg p-6 hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl font-semibold text-cyan-400 mb-2">The Future Ahead</h4>
+                        <p class="text-gray-300 text-sm mb-2">
+                            Our future vision is to become a global leader in AI-driven software, building a complete ecosystem of tools that seamlessly connect and enhance the way people work and live.
+                            <span class="hidden more-text">
+                            We are committed to continuous innovation, focusing on research and development to stay ahead of market trends. We plan to expand our global footprint, forge new strategic partnerships, and create products that truly make a difference in the world.
+                            </span>
+                            <span class="read-more-link text-cyan-300 cursor-pointer font-semibold hover:underline ml-1">...Read More</span>
                         </p>
                     </div>
                 </div>
             </section>
 
-            <!-- Read More Script -->
-            <script>
-                document.querySelectorAll('.read-more-btn').forEach(button => {
-                    button.addEventListener('click', () => {
-                        const content = button.nextElementSibling;
-                        content.classList.toggle('hidden');
-                        button.textContent = content.classList.contains('hidden') ? 'Read More' : 'Read Less';
-                    });
-                });
-            </script>
-
 
             <!-- About Section (Corrected with two-column layout and animated image) -->
-            <section id="about" class="bg-gray-50 rounded-2xl shadow-xl p-8 md:p-16 mt-12 relative overflow-hidden">
-                <!-- Floating shapes for visual depth -->
-                <div class="absolute -top-16 -left-16 w-32 h-32 bg-blue-200 rounded-full opacity-40 animate-pulse-light"></div>
-                <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-blue-300 rounded-full opacity-30 animate-pulse-light"></div>
+            <section id="about" class="bg-[#192734] rounded-2xl shadow-xl p-8 md:p-16 mt-12 relative overflow-hidden text-white">
+                <div class="absolute -top-16 -left-16 w-32 h-32 bg-cyan-400 rounded-full opacity-10 animated-circle"></div>
+                <div class="absolute -bottom-16 -right-16 w-48 h-48 bg-cyan-500 rounded-full opacity-10 animated-circle"></div>
 
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">About Mushafir Global</h3>
+                <h3 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-12 text-center">About Mushafir Global</h3>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                    <!-- Left Column: 5 Points -->
                     <div class="flex flex-col space-y-6">
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">Innovation Driven</h4>
-                            <p class="text-gray-700 text-sm">We create cutting-edge software that solves real-world challenges.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">Innovation Driven</h4>
+                            <p class="text-gray-300 text-sm">We combine deep technical expertise with creative problem-solving to build solutions that redefine industries.</p>
                         </div>
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">User-Centric</h4>
-                            <p class="text-gray-700 text-sm">Our solutions prioritize the needs of users with intuitive designs.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">User-Centric</h4>
+                            <p class="text-gray-300 text-sm">Our solutions are designed with the end-user in mind, focusing on intuitive interfaces and seamless workflows.</p>
                         </div>
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">AI-Powered Tools</h4>
-                            <p class="text-gray-700 text-sm">Incorporating AI to provide smarter and efficient solutions.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">AI-Powered Tools</h4>
+                            <p class="text-gray-300 text-sm">We integrate cutting-edge artificial intelligence to automate complex tasks and provide predictive insights for smarter business decisions.</p>
                         </div>
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">Global Collaboration</h4>
-                            <p class="text-gray-700 text-sm">Working with innovators worldwide to deliver impactful products.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">Global Collaboration</h4>
+                            <p class="text-gray-300 text-sm">We leverage a diverse and globally distributed team to build products that serve a wide range of cultures and markets.</p>
                         </div>
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">Sustainable Approach</h4>
-                            <p class="text-gray-700 text-sm">Ensuring scalable and reliable solutions for long-term impact.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">Sustainable Approach</h4>
+                            <p class="text-gray-300 text-sm">We ensure our solutions are not only powerful but also scalable, reliable, and built for long-term impact and growth.</p>
                         </div>
                     </div>
 
-                    <!-- Middle Column: Images -->
                     <div class="flex flex-col space-y-6 items-center justify-center">
-                        <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl animated-circle hover:scale-105 transform transition duration-500">
+                        <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl animated-circle hover:scale-105 transform transition duration-500 hover:shadow-cyan-400/50 hover:shadow-xl">
                             <img src="images/About Image 1.jpg" alt="Vision Image 1" loading="lazy" class="w-full h-full object-cover">
                         </div>
-                        <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl animated-circle hover:scale-105 transform transition duration-500">
+                        <div class="relative w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-2xl animated-circle hover:scale-105 transform transition duration-500 hover:shadow-cyan-400/50 hover:shadow-xl">
                             <img src="images/About Image 2.jpg" alt="Vision Image 2" loading="lazy" class="w-full h-full object-cover">
                         </div>
                     </div>
 
-                    <!-- Right Column: 5 Points -->
                     <div class="flex flex-col space-y-6">
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">Customer-First</h4>
-                            <p class="text-gray-700 text-sm">We focus on delivering excellent experiences to our users.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">Customer-First</h4>
+                            <p class="text-gray-300 text-sm">Our mission is to deliver excellent customer experiences by prioritizing their needs and providing robust, reliable support.</p>
                         </div>
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">Creative Excellence</h4>
-                            <p class="text-gray-700 text-sm">A culture of creativity drives every solution we build.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">Creative Excellence</h4>
+                            <p class="text-gray-300 text-sm">A culture of creativity and continuous learning drives every solution we build, ensuring we deliver truly unique and impactful products.</p>
                         </div>
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">Agile Development</h4>
-                            <p class="text-gray-700 text-sm">We adapt fast and deliver efficiently through agile workflows.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">Agile Development</h4>
+                            <p class="text-gray-300 text-sm">We use agile methodologies to adapt quickly to changing requirements and deliver high-quality features in an efficient and timely manner.</p>
                         </div>
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">Empowering Businesses</h4>
-                            <p class="text-gray-700 text-sm">Providing solutions that help businesses grow and innovate.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">Empowering Businesses</h4>
+                            <p class="text-gray-300 text-sm">We provide powerful tools that help businesses streamline their operations, boost productivity, and drive sustainable growth.</p>
                         </div>
-                        <div class="bg-white p-4 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-500">
-                            <h4 class="font-semibold text-blue-600 text-lg mb-1">Future Ready</h4>
-                            <p class="text-gray-700 text-sm">Building tools that are ready for tomorrow’s challenges.</p>
+                        <div class="bg-gray-800 p-4 rounded-2xl shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl hover:scale-105 transform transition duration-500">
+                            <h4 class="font-semibold text-cyan-400 text-lg mb-1">Future Ready</h4>
+                            <p class="text-gray-300 text-sm">Our focus is on building forward-looking products that anticipate industry needs and are prepared for tomorrow’s technological challenges.</p>
                         </div>
                     </div>
                 </div>
@@ -319,72 +290,62 @@
 
 
             <!-- Products Section -->
-            <section id="products" class="bg-gray-200 rounded-2xl p-8 md:p-16 mt-12 text-center shadow-xl">
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mushafir Application</h3>
-                <p class="text-lg md:text-xl text-gray-700 mb-12 max-w-3xl mx-auto">
-                    Experience the future of software solutions with Mushafir App – where simplicity meets innovation.  
-                    Designed to empower users and streamline workflows, every feature is crafted for a seamless and interactive experience.
+            <section id="products" class="bg-[#192734] rounded-2xl p-8 md:p-16 mt-12 text-center shadow-xl text-white">
+                <h3 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-6">Introducing The Mushafir Application</h3>
+                <p class="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    The Mushafir Application is designed to be your ultimate social media platform. It connects people from all walks of life, allowing you to share your unique stories, connect with friends, and discover new communities.
                 </p>
 
                 <div class="flex flex-col md:flex-row items-center md:space-x-12">
-                    <!-- Left Side: Circular App Image -->
                     <div class="md:w-1/2 flex justify-center mb-8 md:mb-0">
                         <div class="relative w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden shadow-2xl animated-circle">
-                        <img src="images/Upcoming product.png" alt="Mushafir App" loading="lazy" class="w-full h-full object-cover">
-                        <!-- <div class="absolute inset-0 bg-black/40 flex items-center justify-center rounded-full">
-                            <span class="text-white text-3xl md:text-4xl font-bold animate-pulse">Upcoming Soon</span>
-                        </div> -->
+                            <img src="images/Login Page.png" alt="Mushafir App" loading="lazy" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/20 flex items-center justify-center rounded-full">
+                                <span class="text-white text-3xl md:text-4xl font-bold animate-pulse-fade">Upcoming Soon..</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-
-                    <!-- Right Side: Features -->
                     <div class="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Feature 1 -->
-                        <div class="bg-white p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-blue-50">
-                            <h4 class="text-xl font-semibold text-blue-700 mb-2">Login Page</h4>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Secure and modern login with social integration, animated validations, and password protection to ensure smooth entry for all users.
+                        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-400/50 hover:shadow-xl">
+                            <h4 class="text-xl font-semibold text-cyan-400 mb-2">Secure Authentication</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                Our modern login page uses secure, encrypted methods and integrates with popular social sign-on options for a fast, reliable, and safe experience.
                             </p>
                         </div>
 
-                        <!-- Feature 2 -->
-                        <div class="bg-white p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-blue-50">
-                            <h4 class="text-xl font-semibold text-blue-700 mb-2">Home Dashboard</h4>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Interactive dashboard showing personalized data, quick actions, and visually appealing statistics to keep users engaged.
+                        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-400/50 hover:shadow-xl">
+                            <h4 class="text-xl font-semibold text-cyan-400 mb-2">Intuitive Feed & Dashboard</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                The home dashboard provides a dynamic, personalized feed where you can see the latest posts from friends and discover content that you love.
                             </p>
                         </div>
 
-                        <!-- Feature 3 -->
-                        <div class="bg-white p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-blue-50">
-                            <h4 class="text-xl font-semibold text-blue-700 mb-2">Profile Management</h4>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Complete control over user profile, preferences, and history with intuitive design and smooth transitions for a modern experience.
+                        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-400/50 hover:shadow-xl">
+                            <h4 class="text-xl font-semibold text-cyan-400 mb-2">Customizable Profile</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                Create a profile that truly represents you. Manage your personal information, connect with others, and showcase your stories and media.
                             </p>
                         </div>
 
-                        <!-- Feature 4 -->
-                        <div class="bg-white p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-blue-50">
-                            <h4 class="text-xl font-semibold text-blue-700 mb-2">Notifications & Alerts</h4>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Dynamic notifications and real-time alerts keep users informed, enhanced with subtle animations for visual engagement.
+                        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-400/50 hover:shadow-xl">
+                            <h4 class="text-xl font-semibold text-cyan-400 mb-2">Real-Time Notifications</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                Stay connected with your network. Our intelligent notification system ensures you receive timely and relevant alerts about your connections and interactions.
                             </p>
                         </div>
 
-                        <!-- Feature 5 -->
-                        <div class="bg-white p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-blue-50">
-                            <h4 class="text-xl font-semibold text-blue-700 mb-2">Analytics & Insights</h4>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Powerful analytics with visual charts and trend indicators help users track progress and make informed decisions effortlessly.
+                        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-400/50 hover:shadow-xl">
+                            <h4 class="text-xl font-semibold text-cyan-400 mb-2">Discover & Engage</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                Find and join new communities and engage with content that matches your interests. Our discovery tools help you find new connections and foster meaningful conversations.
                             </p>
                         </div>
 
-                        <!-- Feature 6 -->
-                        <div class="bg-white p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-blue-50">
-                            <h4 class="text-xl font-semibold text-blue-700 mb-2">Interactive Support</h4>
-                            <p class="text-gray-700 text-sm leading-relaxed">
-                                Built-in support features with chat and guidance to assist users instantly. Smooth animations create a friendly and responsive interface.
+                        <div class="bg-gray-800 p-6 rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-400/50 hover:shadow-xl">
+                            <h4 class="text-xl font-semibold text-cyan-400 mb-2">Integrated Support</h4>
+                            <p class="text-gray-300 text-sm leading-relaxed">
+                                Get instant help with our integrated support system. Access a knowledge base, live chat with our team, or submit a support ticket directly from the application.
                             </p>
                         </div>
                     </div>
@@ -392,262 +353,252 @@
             </section>
 
         <!-- Career Section -->
-            <section id="career" class="bg-white rounded-2xl p-8 md:p-16 mt-12 shadow-xl">
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Join Our Team</h3>
-                <div class="flex flex-col lg:flex-row gap-12">
-                    <!-- Left: Internship Cards -->
-                    <div id="internCards" class="lg:w-1/2 space-y-6">
-                        <!-- Application Developer Intern -->
-                        <div class="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
-                            <h4 class="text-xl md:text-2xl font-bold text-blue-600 mb-2">Application Developer Intern</h4>
-                            <p class="text-gray-700 mb-2">Assist in developing new software features for the Mushafir Application.</p>
-                            <p class="text-gray-600 text-sm mb-2"><strong>Skills Required:</strong> JavaScript, Python, API integration, problem-solving.</p>
-                            <p class="text-gray-500 text-sm line-clamp-3" id="appDevDesc">
-                                Work closely with our development team on building scalable and efficient solutions for real-world challenges. Gain hands-on experience in writing clean code, debugging, testing, and collaborating in an agile environment.
-                                <span class="text-blue-600 cursor-pointer ml-1" onclick="toggleReadMore('appDevDesc', this)">Read more</span>
-                            </p>
-                        </div>
+            <section id="career" class="bg-[#192734] rounded-2xl p-8 md:p-16 mt-12 shadow-xl text-white">
+                <h3 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Join Our Team</h3>
+                <p class="text-lg md:text-xl text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+                    We're building the future of software, and we're looking for passionate and talented individuals to join our team. Explore our open internship positions and start your journey with us.
+                </p>
 
-                        <!-- Front End Developer Intern -->
-                        <div class="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
-                            <h4 class="text-xl md:text-2xl font-bold text-blue-600 mb-2">Front End Developer Intern</h4>
-                            <p class="text-gray-700 mb-2">Design and implement visually appealing web interfaces.</p>
-                            <p class="text-gray-600 text-sm mb-2"><strong>Skills Required:</strong> HTML, CSS, JavaScript, React, TailwindCSS.</p>
-                            <p class="text-gray-500 text-sm line-clamp-3" id="frontendDesc">
-                                Help create responsive and interactive front-end components for the Mushafir Application, ensuring excellent UX/UI standards. Work on animations, modern layouts, and interactive elements to delight users.
-                                <span class="text-blue-600 cursor-pointer ml-1" onclick="toggleReadMore('frontendDesc', this)">Read more</span>
-                            </p>
-                        </div>
-
-                        <!-- Back End Developer Intern -->
-                        <div class="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
-                            <h4 class="text-xl md:text-2xl font-bold text-blue-600 mb-2">Back End Developer Intern</h4>
-                            <p class="text-gray-700 mb-2">Build robust and secure backend systems for our application.</p>
-                            <p class="text-gray-600 text-sm mb-2"><strong>Skills Required:</strong> Node.js, Python, REST API, Database management.</p>
-                            <p class="text-gray-500 text-sm line-clamp-3" id="backendDesc">
-                                Work on server-side logic, database management, API creation, and performance optimization. This role is perfect for individuals interested in creating the backbone of scalable applications.
-                                <span class="text-blue-600 cursor-pointer ml-1" onclick="toggleReadMore('backendDesc', this)">Read more</span>
-                            </p>
-                        </div>
-
-                        <!-- UI/UX Intern -->
-                        <div class="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
-                            <h4 class="text-xl md:text-2xl font-bold text-blue-600 mb-2">UI/UX Intern</h4>
-                            <p class="text-gray-700 mb-2">Enhance the user interface and user experience of Mushafir products.</p>
-                            <p class="text-gray-600 text-sm mb-2"><strong>Skills Required:</strong> Figma, Adobe XD, User Research, Prototyping.</p>
-                            <p class="text-gray-500 text-sm line-clamp-3" id="uiuxDesc">
-                                Design intuitive interfaces, conduct user research, create wireframes and prototypes, and ensure a seamless user experience. Ideal for someone creative with a keen eye for detail.
-                                <span class="text-blue-600 cursor-pointer ml-1" onclick="toggleReadMore('uiuxDesc', this)">Read more</span>
-                            </p>
-                        </div>
-
-                        <!-- Database Developer Intern -->
-                        <div class="bg-gray-50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition duration-300">
-                            <h4 class="text-xl md:text-2xl font-bold text-blue-600 mb-2">Database Developer Intern</h4>
-                            <p class="text-gray-700 mb-2">Maintain and optimize databases for our applications.</p>
-                            <p class="text-gray-600 text-sm mb-2"><strong>Skills Required:</strong> SQL, MongoDB, Data Modeling, Performance Tuning.</p>
-                            <p class="text-gray-500 text-sm line-clamp-3" id="dbDesc">
-                                Work on database design, query optimization, and data security. Gain hands-on experience in managing large datasets, ensuring data integrity, and supporting backend operations.
-                                <span class="text-blue-600 cursor-pointer ml-1" onclick="toggleReadMore('dbDesc', this)">Read more</span>
-                            </p>
-                        </div>
+                <div id="internCards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl md:text-2xl font-bold text-cyan-400 mb-2">Application Developer Intern</h4>
+                        <p class="text-gray-300 mb-2">You will contribute to our core product lifecycle by writing clean, efficient code and participating in peer reviews.</p>
+                        <p class="text-gray-400 text-sm mb-4"><strong>Skills:</strong> JavaScript, Python, API integration, problem-solving.</p>
+                        <a href="#career-form" class="inline-flex items-center text-cyan-300 font-semibold hover:underline">
+                            Apply <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
                     </div>
 
-                    <!-- Right: Google Form -->
-                    <div id="careerForm" class="lg:w-1/2 h-auto">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScURvkQ-oyK6K6WD1juQE5307L7pqdDU3A4TeRaxPUqhxIApQ/viewform?usp=header"
-                            width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">
-                            Loading…
-                        </iframe>
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl md:text-2xl font-bold text-cyan-400 mb-2">Front End Developer Intern</h4>
+                        <p class="text-gray-300 mb-2">You will design and implement visually stunning and responsive web interfaces, translating design concepts into high-quality code.</p>
+                        <p class="text-gray-400 text-sm mb-4"><strong>Skills:</strong> HTML, CSS, JavaScript, React, TailwindCSS.</p>
+                        <a href="#career-form" class="inline-flex items-center text-cyan-300 font-semibold hover:underline">
+                            Apply <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl md:text-2xl font-bold text-cyan-400 mb-2">Back End Developer Intern</h4>
+                        <p class="text-gray-300 mb-2">You will build and maintain scalable and reliable server-side logic, working with databases and ensuring a smooth flow of data.</p>
+                        <p class="text-gray-400 text-sm mb-4"><strong>Skills:</strong> Node.js, Python, REST API, Database management.</p>
+                        <a href="#career-form" class="inline-flex items-center text-cyan-300 font-semibold hover:underline">
+                            Apply <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl md:text-2xl font-bold text-cyan-400 mb-2">UI/UX Intern</h4>
+                        <p class="text-gray-300 mb-2">You will work on user research, wireframing, and prototyping to create intuitive and aesthetically pleasing user experiences.</p>
+                        <p class="text-gray-400 text-sm mb-4"><strong>Skills:</strong> Figma, Adobe XD, User Research, Prototyping.</p>
+                        <a href="#career-form" class="inline-flex items-center text-cyan-300 font-semibold hover:underline">
+                            Apply <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl md:text-2xl font-bold text-cyan-400 mb-2">Database Developer Intern</h4>
+                        <p class="text-gray-300 mb-2">You will maintain and optimize our database architecture, ensuring data integrity, security, and high performance for all applications.</p>
+                        <p class="text-gray-400 text-sm mb-4"><strong>Skills:</strong> SQL, MongoDB, Data Modeling, Performance Tuning.</p>
+                        <a href="#career-form" class="inline-flex items-center text-cyan-300 font-semibold hover:underline">
+                            Apply <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-cyan-400/50 hover:shadow-xl transition-shadow duration-300">
+                        <h4 class="text-xl md:text-2xl font-bold text-cyan-400 mb-2">Cloud Engineer Intern</h4>
+                        <p class="text-gray-300 mb-2">You will assist in deploying and managing cloud infrastructure, automating workflows, and ensuring the scalability and reliability of our services.</p>
+                        <p class="text-gray-400 text-sm mb-4"><strong>Skills:</strong> AWS, Docker, CI/CD, Infrastructure as Code.</p>
+                        <a href="#career-form" class="inline-flex items-center text-cyan-300 font-semibold hover:underline">
+                            Apply <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
                     </div>
                 </div>
             </section>
 
-            <!-- Read More Script -->
-            <script>
-            function toggleReadMore(id, btn){
-                const p = document.getElementById(id);
-                p.classList.toggle('line-clamp-3'); // toggle truncation
-                btn.innerText = p.classList.contains('line-clamp-3') ? 'Read more' : 'Show less';
-
-                // Adjust Google Form height dynamically
-                adjustFormHeight();
-            }
-
-            // Adjust form height based on left side cards
-            function adjustFormHeight(){
-                const cards = document.getElementById('internCards');
-                const form = document.getElementById('careerForm');
-                const cardsHeight = cards.offsetHeight;
-                form.style.height = cardsHeight + 'px';
-            }
-
-            // Run on page load
-            document.addEventListener('DOMContentLoaded', () => {
-                adjustFormHeight();
-                window.addEventListener('resize', adjustFormHeight); // responsive
-            });
-            </script>
+            <section id="career-form" class="bg-gray-800 rounded-2xl p-8 md:p-16 mt-12 shadow-xl">
+                <h3 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Application Form</h3>
+                <div class="w-full h-auto">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScURvkQ-oyK6K6WD1juQE5307L7pqdDU3A4TeRaxPUqhxIApQ/viewform?usp=header"
+                        width="100%"
+                        height="800"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0">
+                        Loading…
+                    </iframe>
+                </div>
+            </section>
 
             <!-- Contact Section -->
-            <section id="contact" class="bg-gray-200 rounded-2xl p-8 md:p-16 mt-12 shadow-xl">
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Get in Touch</h3>
+            <section id="contact" class="bg-[#192734] rounded-2xl p-8 md:p-16 mt-12 shadow-xl text-white">
+                <h3 class="text-3xl md:text-4xl font-bold text-cyan-400 mb-8 text-center">Get in Touch</h3>
                 
                 <div class="flex flex-col lg:flex-row gap-12 items-start">
-                    <!-- Left: Contact Details -->
                     <div class="lg:w-1/2 space-y-6">
                         <div class="flex items-start space-x-4">
-                            <span class="text-blue-600 text-2xl">📍</span>
+                            <span class="text-cyan-400 text-2xl">📍</span>
                             <div>
-                                <h4 class="text-xl font-semibold text-gray-800">Address</h4>
-                                <p class="text-gray-700">B-Block, sector 62, Noida, Uttar Pardesh, India - 201309</p>
+                                <h4 class="text-xl font-semibold text-white">Address</h4>
+                                <p class="text-gray-300">B-Block, sector 62, Noida, Uttar Pradesh, India - 201309</p>
                             </div>
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <span class="text-blue-600 text-2xl">📞</span>
+                            <span class="text-cyan-400 text-2xl">📞</span>
                             <div>
-                                <h4 class="text-xl font-semibold text-gray-800">Phone</h4>
-                                <p class="text-gray-700">+91 6202447198</p>
+                                <h4 class="text-xl font-semibold text-white">Phone</h4>
+                                <p class="text-gray-300">+91 6202447198</p>
                             </div>
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <span class="text-blue-600 text-2xl">✉️</span>
+                            <span class="text-cyan-400 text-2xl">✉️</span>
                             <div>
-                                <h4 class="text-xl font-semibold text-gray-800">Email</h4>
-                                <p class="text-gray-700">mushafirglobal@gmail.com</p>
+                                <h4 class="text-xl font-semibold text-white">Email</h4>
+                                <p class="text-gray-300">mushafirglobal@gmail.com</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right: Google Map -->
-                    <div class="lg:w-1/2 h-96 rounded-2xl overflow-hidden shadow-lg">
+                    <div class="lg:w-1/2 h-96 rounded-2xl overflow-hidden shadow-lg border-2 border-gray-700">
                         <iframe
-                            src="https://maps.google.com/maps?q=28.6294926,77.3753995&z=14&output=embed"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112079.06806080353!2d77.30902598858992!3d28.62125139775085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf6112001e3e7%3A0x1a87b328a6f3a372!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1695420000000!5m2!1sen!2sin"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
             </section>
-
         </main>
 
-        <footer class="bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-400 text-white rounded-t-xl py-10 shadow-inner">
-            <div class="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10">
-
-                <!-- Left: Logo + Short Tagline -->
-                <div class="flex flex-col items-start space-y-4">
-                    <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-white shadow-lg">
-                        <img src="images/Mushafir Logo (1).png" alt="Mushafir Logo" class="w-full h-full object-cover">
+        <!-- Footer -->
+    <footer class="bg-slate-800 text-slate-300 py-12 mt-12 rounded-t-xl">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <!-- Replace this with your logo's PNG path -->
+                        <img src="images/Transparent Mushafir Logo2 (1).png" alt="Mushafir Global Logo" class="w-30 h-20">
+                        <!-- <span class="text-2xl font-bold text-white">Mushafir Global</span> -->
                     </div>
-                    <p class="text-gray-200 text-sm md:text-base max-w-xs">
-                        Mushafir Global – Empowering businesses with innovative AI-powered software solutions.
-                    </p>
-                    <button id="backToTop" 
-                            class="bg-white/20 hover:bg-white/40 text-white px-6 py-2 rounded-full shadow-lg transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 animate-bounce">
-                        ↑ Back to Top
-                    </button>
+                    <p class="text-slate-400 max-w-sm">Crafting innovative software solutions that drive business growth and digital transformation.</p>
                 </div>
 
-                <!-- Middle: Navigation Links -->
-                <div class="flex flex-col space-y-3">
-                    <h4 class="text-xl font-semibold mb-2"><u>Explore</u></h4>
-                    <a href="#home" class="hover:text-blue-300 transition">Home</a>
-                    <a href="#journey" class="hover:text-blue-300 transition">Journey</a>
-                    <a href="#about" class="hover:text-blue-300 transition">About</a>
-                    <a href="#products" class="hover:text-blue-300 transition">Products</a>
-                    <a href="#career" class="hover:text-blue-300 transition">Career</a>
-                    <a href="#contact" class="hover:text-blue-300 transition">Contact</a>
+                <!-- Footer Navigation -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="#journey" class="hover:text-blue-400 transition-colors">Journey</a></li>
+                        <li><a href="#about" class="hover:text-blue-400 transition-colors">About Us</a></li>
+                        <li><a href="#products" class="hover:text-blue-400 transition-colors">Products</a></li>
+                        <li><a href="#career" class="hover:text-blue-400 transition-colors">Careers</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+                    </ul>
                 </div>
 
-                <!-- Right: Contact Info + Social Links -->
-                <div class="flex flex-col space-y-4">
-                    <h4 class="text-xl font-semibold mb-2"><u>Contact</u></h4>
-                    <div class="flex items-center space-x-2">
-                        <span>📍</span>
-                        <p class="text-gray-200 text-sm md:text-base">B-Block, Sector 62, Noida, UP, India - 201309</p>
+                <!-- Contact & Social -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Contact & Connect</h3>
+                    <div class="space-y-2">
+                        <p class="flex items-center space-x-2">
+                            <span class="text-blue-400">📍</span>
+                            <span class="text-slate-400">B-Block, Sector 62, Noida, UP, India</span>
+                        </p>
+                        <p class="flex items-center space-x-2">
+                            <span class="text-blue-400">📞</span>
+                            <span class="text-slate-400">+91 6202447198</span>
+                        </p>
+                        <p class="flex items-center space-x-2">
+                            <span class="text-blue-400">✉️</span>
+                            <span class="text-slate-400">mushafirglobal@gmail.com</span>
+                        </p>
                     </div>
-                    <div class="flex items-center space-x-2">
-                        <span>📞</span>
-                        <p class="text-gray-200 text-sm md:text-base">+91 6202447198</p>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <span>✉️</span>
-                        <p class="text-gray-200 text-sm md:text-base">mushafirglobal@gmail.com</p>
-                    </div>
-                    <div class="flex space-x-4 mt-2">
-                        <a href="https://www.linkedin.com/company/mushafir-global/" target="_blank" class="hover:text-blue-500 transition duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4v16h-4V8zm7.5 0h3.75v2.2h.05c.52-.98 1.8-2 3.7-2 3.95 0 4.68 2.6 4.68 5.97V24h-4v-7.3c0-1.74-.03-3.97-2.42-3.97-2.42 0-2.79 1.88-2.79 3.83V24h-4V8z"/>
-                            </svg>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="https://www.linkedin.com/company/mushafir-global/" target="_blank" class="text-slate-400 hover:text-blue-500 transition duration-300">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4v16h-4V8zm7.5 0h3.75v2.2h.05c.52-.98 1.8-2 3.7-2 3.95 0 4.68 2.6 4.68 5.97V24h-4v-7.3c0-1.74-.03-3.97-2.42-3.97-2.42 0-2.79 1.88-2.79 3.83V24h-4V8z"/></svg>
                         </a>
-                        <!-- <a href="https://www.instagram.com/mushafirglobal" target="_blank" class="hover:text-pink-500 transition duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.96.24 2.415.403a4.918 4.918 0 011.745 1.01 4.918 4.918 0 011.01 1.745c.164.456.348 1.245.403 2.415.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.96-.403 2.415a4.918 4.918 0 01-1.01 1.745 4.918 4.918 0 01-1.745 1.01c-.456.164-1.245.348-2.415.403-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.96-.24-2.415-.403a4.918 4.918 0 01-1.745-1.01 4.918 4.918 0 01-1.01-1.745c-.164-.456-.348-1.245-.403-2.415C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.056-1.17.24-1.96.403-2.415a4.918 4.918 0 011.01-1.745 4.918 4.918 0 011.745-1.01c.456-.164 1.245-.348 2.415-.403C8.416 2.212 8.8 2.2 12 2.2zm0-2.2C8.737 0 8.332.014 7.052.072 5.772.13 4.758.314 3.95.622a7.116 7.116 0 00-2.53 1.64 7.116 7.116 0 00-1.64 2.53C-.314 5.242-.13 6.256-.072 7.536-.014 8.816 0 9.221 0 12s-.014 3.184-.072 4.464c-.058 1.28-.242 2.294-.55 3.102a7.116 7.116 0 001.64 2.53 7.116 7.116 0 002.53 1.64c.808.308 1.822.492 3.102.55C8.816 23.986 9.221 24 12 24s3.184-.014 4.464-.072c1.28-.058 2.294-.242 3.102-.55a7.116 7.116 0 002.53-1.64 7.116 7.116 0 001.64-2.53c.308-.808.492-1.822.55-3.102.058-1.28.072-1.685.072-4.464s-.014-3.184-.072-4.464c-.058-1.28-.242-2.294-.55-3.102a7.116 7.116 0 00-1.64-2.53 7.116 7.116 0 00-2.53-1.64c-.808-.308-1.822-.492-3.102-.55C15.184.014 14.779 0 12 0z"/>
-                                <circle cx="12" cy="12" r="3.2"/>
-                                <circle cx="18.4" cy="5.6" r="1.44"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.facebook.com/mushafirglobal" target="_blank" class="hover:text-blue-400 transition duration-300">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M22.675 0h-21.35C.592 0 0 .593 0 1.326v21.348C0 23.407.592 24 1.326 24h11.494v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.464.099 2.794.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.407 24 24 23.407 24 22.674V1.326C24 .593 23.407 0 22.675 0z"/>
-                            </svg>
-                        </a> -->
                     </div>
                 </div>
             </div>
-        
-            <!-- Footer Bottom -->
-            <div class="mt-10 text-center text-gray-300 text-sm md:text-base">
-                &copy; 2024 Mushafir Global. All rights reserved.
+            
+            <div class="mt-8 text-center text-slate-500 text-sm border-t border-slate-700 pt-6">
+                &copy; 2025 Mushafir Global. All rights reserved.
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <script>
-            const menuBtn = document.getElementById('mobile-menu-button');
-            const menu    = document.getElementById('mobile-menu');
-            const overlay = document.getElementById('overlay');
-            const links   = document.querySelectorAll('.menu-link');
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-gray-800 text-cyan-400 p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-gray-700 hover:shadow-cyan-400/50">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+        </svg>
+    </button>
+       <script>
+        // Mobile menu toggle logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('overlay');
+        const menuLinks = document.querySelectorAll('.menu-link');
 
-            function openMenu(){
-                menu.classList.remove('translate-x-full');
-                menu.classList.add('translate-x-0'); // Correctly positions for the slide-in
+        function toggleMobileMenu() {
+            const isMenuOpen = mobileMenu.classList.contains('translate-x-full');
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('translate-x-full');
                 overlay.classList.remove('hidden');
-            }
-            
-            function closeMenu(){
-                menu.classList.remove('translate-x-0');
-                menu.classList.add('translate-x-full'); // Slides the menu out
+                mobileMenuButton.classList.add('hamburger-open');
+            } else {
+                mobileMenu.classList.add('translate-x-full');
                 overlay.classList.add('hidden');
+                mobileMenuButton.classList.remove('hamburger-open');
             }
-            
-            // Event listeners
-            menuBtn.addEventListener('click', openMenu);
-            overlay.addEventListener('click', closeMenu);
-            links.forEach(link => link.addEventListener('click', closeMenu));
-        </script>
-        <script>
-            const backToTop = document.getElementById('backToTop');
+        }
 
-            backToTop.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+        mobileMenuButton.addEventListener('click', toggleMobileMenu);
+        overlay.addEventListener('click', toggleMobileMenu);
+
+        // Close menu when a link is clicked
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                overlay.classList.add('hidden');
+                mobileMenuButton.classList.remove('hamburger-open');
             });
+        });
 
-            // Show button only when scrolling down
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 300) {
-                backToTop.classList.remove('hidden');
-                } else {
-                backToTop.classList.add('hidden');
+        // Back to top button logic
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0');
+            } else {
+                backToTopBtn.classList.add('opacity-0');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // New 'Read More' script for the Journey section
+        document.querySelectorAll('.read-more-link').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevents the page from jumping
+                const moreText = link.previousElementSibling;
+                if (moreText) {
+                    moreText.classList.toggle('hidden');
+                    link.textContent = moreText.classList.contains('hidden') ? '...Read More' : '...Read Less';
                 }
             });
+        });
 
-            // Initially hidden
-            backToTop.classList.add('hidden');
-            </script>
-
-
+    </script>
     </body>
 </html>
